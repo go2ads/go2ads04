@@ -3,5 +3,6 @@
 window.go2adsClients = [
   { logo: "assets/chai-factory.jpg", alt: "Client logo" },
   { logo: "assets/sharvesh-logistics.png", alt: "Client logo" },
-  { logo: "assets/sai-sara-salon.png", alt: "Client logo" }
+  { logo: "assets/sai-sara-salon.png", alt: "Client logo" },
+  { logo: "assets/time-frame-memories.png", alt: "Client logo" }
 ];
