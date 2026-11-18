@@ -1,0 +1,38 @@
+GO2ADS COMPLETE SEO UPGRADE — DEPLOYMENT CHECKLIST
+
+WHAT CHANGED
+- Preserved existing design, logo, pricing, contact details, Google enquiry form, GA4 ID and Meta Pixel ID.
+- Added a learning hub at blog.html and four educational articles.
+- Added dedicated pages for Meta Ads, Google Ads, Website Development and Lead Generation.
+- Added district pages for Nagapattinam, Tiruvarur and Thanjavur, matching the original site's stated service-area focus. These pages describe remote/online support and do not claim physical offices.
+- Added internal links from homepage and services page.
+- Added canonical, Open Graph, Twitter and page-specific structured data to new pages.
+- Expanded sitemap and robots.txt.
+- Added GA4 click events for WhatsApp, phone and email links.
+
+BEFORE / AFTER DEPLOYMENT
+1. Upload the contents of this folder to the root of the GitHub Pages repository.
+2. Confirm the custom domain go2ads.in and HTTPS are still enabled.
+3. Open https://go2ads.in/sitemap.xml and submit it in Google Search Console.
+4. In Search Console, inspect the homepage, new service pages, blog index, article pages and district pages; request indexing where appropriate.
+5. Verify the GA4 property G-9CS0B9P2BL receives page_view, whatsapp_click, phone_click and email_click events.
+6. The existing Google Form is embedded in an iframe. A parent-page script cannot reliably detect a successful Google Form submission; configure conversion tracking inside Google Forms / Google Tag Manager or use a thank-you redirect if supported.
+7. Confirm the Meta Pixel events in Meta Events Manager.
+8. Add genuine social profile URLs to sameAs only after confirming the official profile URLs.
+9. Add only client-approved testimonials and verified campaign results. Never invent performance claims.
+10. Run PageSpeed Insights and fix any real Core Web Vitals issues.
+
+IMPORTANT
+- Search ranking and traffic increases are not guaranteed.
+- Google Business Profile must be created/verified by the business owner; no fake address or office listing should be used.
+- Check all business details and service availability before publishing.
+
+
+LOCAL + STATEWIDE SEO TARGETING
+- Homepage is the primary statewide landing page for broad searches such as Digital Marketing Agency in Tamil Nadu.
+- Dedicated pages target Digital Marketing Agency/Services in Thanjavur, Tiruvarur and Nagapattinam.
+- Each district page now includes distinct copy, service descriptions, local area examples, FAQs, internal links and FAQ structured data.
+- Local place examples are targeting suggestions only; confirm the actual customer/service coverage before running paid campaigns.
+- Do not create fake office addresses or Google Business Profile listings in districts where the business has no eligible physical location.
+- Add genuine local case studies, reviews and project examples as they become available.
+- Submit updated sitemap in Google Search Console and inspect each of the four target pages.

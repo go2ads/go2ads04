@@ -1,0 +1,28 @@
+GO2ADS CLIENT CONTENT UPDATES
+
+CLIENT LOGOS
+1. Copy the new logo image into assets/clients/ (create the folder if needed).
+2. Open data/clients.js.
+3. Add: { logo: "assets/clients/your-logo.png", alt: "Client logo" }
+4. Commit and push the changed files to GitHub. Only the logo image appears.
+
+TESTIMONIALS
+1. Open data/testimonials.js.
+2. Add an object with these four fields only:
+   { rating: 5, review: "Client-approved review", businessName: "Business Name", district: "District" }
+3. Commit and push the changed file to GitHub.
+
+No HTML edits are needed for routine logo or testimonial additions.
+Only publish genuine reviews with the client's permission.
+
+CAMPAIGN RESULTS
+1. Open data/campaign-results.js.
+2. Add only verified, client-approved outcomes using:
+   { title: "Lead generation", businessName: "Business Name", district: "District", metric: "Verified result", description: "Short approved context." }
+3. Save and publish the changed file. The section appears automatically when at least one valid result is added.
+Do not publish unverified performance claims.
+
+CAROUSEL CONTROLS
+Client logos, testimonials and campaign results scroll automatically.
+Visitors can also use the left/right arrow controls or swipe/trackpad horizontally.
+Auto-scroll pauses while the visitor hovers over or focuses the carousel and respects reduced-motion settings.
