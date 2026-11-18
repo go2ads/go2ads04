@@ -54,16 +54,16 @@
 
   const resultsSection = document.getElementById('campaign-results');
   const resultsTrack = document.getElementById('campaign-results-track');
-  if (resultsSection && resultsTrack && Array.isArray(window.go2adsCampaignResults) && window.go2adsCampaignResults.length) {
-    window.go2adsCampaignResults.forEach(item => {
-      if (!item.title || !item.businessName || !item.metric) return;
-      resultsTrack.appendChild(makeCard('campaign-result-card', card => {
-        const title = document.createElement('small'); title.textContent = item.title;
-        const metric = document.createElement('strong'); metric.textContent = item.metric;
-        const business = document.createElement('b'); business.textContent = item.businessName;
-        const district = document.createElement('span'); district.textContent = item.district || '';
-        const description = document.createElement('p'); description.textContent = item.description || '';
-        card.append(title, metric, business, district, description);
+  if (resultsSection && resultsTrack && Array.isArray(window.go2adsCampaignScreenshots)) {
+    window.go2adsCampaignScreenshots.forEach((src, index) => {
+      if (typeof src !== 'string' || !src.trim()) return;
+      resultsTrack.appendChild(makeCard('campaign-screenshot-card', card => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = `go2ads work screenshot ${index + 1}`;
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        card.appendChild(img);
       }));
     });
     if (resultsTrack.children.length) resultsSection.hidden = false;
@@ -98,10 +98,6 @@
   document.addEventListener('click', event => {
     const link = event.target.closest('a[href]'); if (!link) return;
     const href = link.href;
-    if (typeof window.gtag !== 'function') return;
-    const label = (link.innerText || link.getAttribute('aria-label') || '').trim();
-    if (href.includes('wa.me/') || href.includes('whatsapp.com/')) window.gtag('event', 'whatsapp_click', { link_url: href, link_text: label });
-    else if (href.startsWith('tel:')) window.gtag('event', 'phone_click', { link_url: href, link_text: label });
-    else if (href.startsWith('mailto:')) window.gtag('event', 'email_click', { link_url: href, link_text: label });
+    if ((href.includes('wa.me/') || href.includes('whatsapp.com/')) && typeof window.gtag === 'function') window.gtag('event', 'whatsapp_click', { link_url: href, link_text: (link.innerText || '').trim() });
   });
 })();
