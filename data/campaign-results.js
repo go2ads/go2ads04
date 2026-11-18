@@ -1,4 +1,6 @@
-// Add verified campaign outcomes only. Each item: { title, businessName, district, metric, description }
-window.go2adsCampaignResults = [
-  // { title: "Lead generation", businessName: "Business Name", district: "District", metric: "Verified result", description: "Short approved context." }
+// Image-only gallery. Add more screenshot paths to this array when needed.
+window.go2adsCampaignScreenshots = [
+  "assets/campaign-screenshots/work-1.webp",
+  "assets/campaign-screenshots/work-2.webp",
+  "assets/campaign-screenshots/work-3.webp"
 ];
